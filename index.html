@@ -10,17 +10,24 @@ body {
     font-family: 'Comic Sans MS', cursive;
     color: #fff;
     text-align: center;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background: linear-gradient(
+  135deg,
+  #0B1026,
+  #1A1F3C,
+  #2B1C44,
+  #6A5ACD
+);
+
     background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    animation: galaxyMove 20s ease infinite;;
     overflow-x: hidden;
 }
 
 /* Animated background */
-@keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+@keyframes galaxyMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Doodle stars */
@@ -44,11 +51,11 @@ header {
     padding: 50px 20px;
 }
 
-h1 {
-    font-size: 3em;
-    color: #ffd6ff;
-    text-shadow: 0 0 10px rgba(255, 182, 255, 0.8);
+h1, h2 {
+  color: #E0C3FC;
+  text-shadow: 0 0 12px #6A5ACD;
 }
+
 
 .section {
     padding: 40px 20px;
